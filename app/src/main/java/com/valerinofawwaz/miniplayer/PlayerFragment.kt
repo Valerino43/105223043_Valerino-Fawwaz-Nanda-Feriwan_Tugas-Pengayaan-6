@@ -84,7 +84,7 @@ class PlayerFragment : Fragment() {
     private fun resetPlayer() {
         mediaPlayer?.apply {
             if (isPlaying) stop()
-            prepare() // Re-prepare to be ready for next play
+            prepare()
             seekTo(0)
         }
         handler.removeCallbacksAndMessages(null)
